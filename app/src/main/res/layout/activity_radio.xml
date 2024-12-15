@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/radio"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="لطفا به سوال های زیر پاسخ دهید"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="#829D9494"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <!-- Question 1 -->
+        <TextView
+            android:id="@+id/question_reading_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="در چه زمان‌هایی بیشتر کتاب می‌خوانید؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_group_reading_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_reading_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="صبح" />
+
+            <RadioButton
+                android:id="@+id/radio_reading_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ظهر" />
+
+            <RadioButton
+                android:id="@+id/radio_reading_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شب" />
+
+            <RadioButton
+                android:id="@+id/radio_reading_time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آخر هفته‌ها" />
+
+            <RadioButton
+                android:id="@+id/radio_reading_time5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هنگام سفر" />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:id="@+id/question_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اگر می‌توانستید به یک شخصیت داستانی تبدیل شوید، آن شخصیت را انتخاب کنید:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_character1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="یک قهرمان با قدرت‌های خاص" />
+
+            <RadioButton
+                android:id="@+id/radio_character2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="یک شخصیت تاریخی" />
+
+            <RadioButton
+                android:id="@+id/radio_character3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="یک ضدقهرمان" />
+
+            <RadioButton
+                android:id="@+id/radio_character4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="موجودی خیالی (مثلا: درخت سخنگو)" />
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:id="@+id/question_trait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="یک صفت عمیق شخصیتی که برای شما ارزشمند است را انتخاب کنید:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_trait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_trait1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شجاعت" />
+
+            <RadioButton
+                android:id="@+id/radio_trait2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="صداقت" />
+
+            <RadioButton
+                android:id="@+id/radio_trait3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خلاقیت" />
+
+            <RadioButton
+                android:id="@+id/radio_trait4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="همدلی" />
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ذهن شما در حین خواندن کتاب به چه تصاویری یا مکان هایی می رسد؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_mind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_mind1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="جنگل های افسانه ای"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_mind2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دنیای زیر آب"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_mind3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شهر های آینده" />
+
+            <RadioButton
+                android:id="@+id/radio_mind4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فضا و کهکشان" />
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کدام یک از دنیاهای خیالی زیر برای شما بیشترین جذابیت را دارد ؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_imaginaryWorld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_imaginaryWorld1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دنیای جادوگری" />
+
+            <RadioButton
+                android:id="@+id/radio_imaginaryWorld2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دنیای علمی و تخیلی"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_imaginaryWorld3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دنیای فانتزی"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_imaginaryWorld4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دنیای تاریخی"
+                android:enabled="false" />
+        </RadioGroup>
+
+        <!-- Question 6 -->
+        <TextView
+            android:id="@+id/question_belife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="یک مدل یا شعاری که به آن اعتقاد دارید چیست؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_belief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_belief1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هر روز یک قدم به جلو" />
+
+            <RadioButton
+                android:id="@+id/radio_belief2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="با قلب خود زندگی کن"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_belief3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دنیا را تغییر بده"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_belief4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="به خودت ایمان داشته باش"
+                android:enabled="false" />
+        </RadioGroup>
+
+        <!-- Question 7 -->
+        <TextView
+            android:id="@+id/question_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آیا به کتاب هایی که حاوی پیام های اجتماعی یا فرهنگی خاص هستند علاقه مندید؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_message1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بله"
+                 />
+
+            <RadioButton
+                android:id="@+id/radio_message2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خیر"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_message3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="گاهی اوقات"
+                android:enabled="false" />
+
+        </RadioGroup>
+
+        <!-- Question 8 -->
+        <TextView
+            android:id="@+id/question_sense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="با کدام یک از حواس خود بیشتر به داستان جذب می شوید؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_sense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_sense1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بینایی (تصاویر،نقاشی ها)"
+                 />
+
+            <RadioButton
+                android:id="@+id/radio_sense2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شنوایی (صداها و موزیک)"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_sense3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حسی(احساسات و عواطف)"
+                android:enabled="false" />
+
+        </RadioGroup>
+
+        <!-- Question 9 -->
+        <TextView
+            android:id="@+id/question_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اگر یک کتاب می توانست شما را به یک زمان یا مکان خاص ببرد، آن را انتخاب کنید:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دوران باستان"
+                 />
+
+            <RadioButton
+                android:id="@+id/radio_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آینده ای دور "
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="یک روز عادی در یک شهر بزرگ"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_time4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="یک مکان خیالی"
+                android:enabled="false" />
+
+        </RadioGroup>
+
+        <!-- Question 10 -->
+        <TextView
+            android:id="@+id/question_theEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کدام نوع پایان های داستانی برای شما جذاب تر است؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_theEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_theEnd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="پایان باز" />
+
+            <RadioButton
+                android:id="@+id/radio_theEnd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="پایان بسته "
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_theEnd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="پایان غافلگیر کننده"
+                android:enabled="false" />
+
+            <RadioButton
+                android:id="@+id/radio_theEnd4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="پایان منطقی"
+                android:enabled="false" />
+
+        </RadioGroup>
+
+        <!-- Question 11 -->
+        <TextView
+            android:id="@+id/question_strange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آیا به داستان هایی که شخصیت های غیر معمول و عجیب دارند علاقه مندید؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_strange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_strange1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بله" />
+
+            <RadioButton
+                android:id="@+id/radio_strange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خیر"
+
+                android:enabled="false"
+                />
+
+
+        </RadioGroup>
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="پایان پرسشنامه"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>

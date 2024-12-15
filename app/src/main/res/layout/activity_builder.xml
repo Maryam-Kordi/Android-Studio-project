@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/builder"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layoutDirection="ltr">
+
+    <!-- عنوان بالای صفحه -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اطلاعات سازنده"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#829D9494"
+        android:padding="10dp"
+        android:gravity="center" />
+
+    <!-- مستطیل ساده -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FECCC7C7"
+        android:padding="16dp"
+        android:elevation="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="start"> <!-- چپ‌چین کردن محتوا -->
+
+        <!-- اطلاعات سازنده -->
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Maryam Kordi"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/text_student_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Number: 991238"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: marymkordihsu@gmail.com"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+</LinearLayout>
+

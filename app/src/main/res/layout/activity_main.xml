@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- مستطیل خاکستری -->
+    <LinearLayout
+        android:id="@+id/box_start"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="#D3D3D3"
+        android:padding="16dp"
+        android:elevation="8dp">
+
+        <!-- متن -->
+        <TextView
+            android:id="@+id/text_start_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="فرایند پیشنهاد کتاب آغاز شود؟"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- دکمه شروع -->
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Start"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+    <!-- دکمه اطلاعات سازنده -->
+    <Button
+        android:id="@+id/button_builder_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اطلاعات سازنده"
+        android:backgroundTint="@color/black"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+</RelativeLayout>
