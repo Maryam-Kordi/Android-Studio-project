@@ -1,20 +1,26 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+# پوشه‌های سیستم‌عامل
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+Thumbs.db
+
+# پوشه‌های اندروید استودیو (نیازی به نسخه‌بندی ندارند)
+.idea/
+*.iml
+
+# پوشه‌های بیلد
+.gradle/
+build/
+app/build/
+!gradle-wrapper.jar
+
+# وابستگی‌های محلی (تنظیمات مربوط به سیستم شما)
 local.properties
-*.apk
-.idea
-gradle*
+
+# فایل‌های موقتی
 *.log
-/app/build
+*.tmp
+*.bak
+*.swp
+
+# فایل‌های مربوط به Docker (اختیاری)
+Dockerfile
+*.env
